@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NjF-4s-nz9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HOME-->
+        <scene sceneID="ind-r7-NRD">
+            <objects>
+                <viewController id="GEJ-oe-71C" customClass="HomeScreenViewController" customModule="Bonida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oot-S1-8zh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAX-Dx-4KG">
+                                <rect key="frame" x="57.5" y="344" width="260" height="36"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                <state key="normal" title="Generare Coduri">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="codesGenerationButtonTapped:" destination="GEJ-oe-71C" eventType="touchUpInside" id="kR3-d6-MiX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9e-sw-9db">
+                                <rect key="frame" x="57.5" y="420" width="260" height="36"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                <state key="normal" title="Gestionare Coduri">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="codesGestionButtonTapped:" destination="GEJ-oe-71C" eventType="touchUpInside" id="hqL-dj-gRU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqK-OX-mP1">
+                                <rect key="frame" x="57.5" y="496" width="260" height="36"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                <state key="normal" title="Gestionare Marfa">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="itemsGestionButtonTapped:" destination="GEJ-oe-71C" eventType="touchUpInside" id="LpX-Z4-spV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf6-mg-WTZ">
+                                <rect key="frame" x="57.5" y="572" width="260" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="MbB-Z5-E8L"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="XGL-Ch-C7a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                <state key="normal" title="Gestionare Depozite">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="depositsGestionButtonTapped:" destination="GEJ-oe-71C" eventType="touchUpInside" id="b0o-lt-AEr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iAX-Dx-4KG" firstAttribute="centerX" secondItem="hLX-wW-y8T" secondAttribute="centerX" id="49V-Eb-K4R"/>
+                            <constraint firstItem="pf6-mg-WTZ" firstAttribute="centerX" secondItem="hLX-wW-y8T" secondAttribute="centerX" id="85c-BH-49B"/>
+                            <constraint firstItem="IqK-OX-mP1" firstAttribute="width" secondItem="s9e-sw-9db" secondAttribute="width" id="CMm-av-JzS"/>
+                            <constraint firstItem="IqK-OX-mP1" firstAttribute="height" secondItem="s9e-sw-9db" secondAttribute="height" id="GKx-K1-qqT"/>
+                            <constraint firstItem="IqK-OX-mP1" firstAttribute="height" secondItem="pf6-mg-WTZ" secondAttribute="height" id="Gnl-yQ-06W"/>
+                            <constraint firstItem="s9e-sw-9db" firstAttribute="top" secondItem="iAX-Dx-4KG" secondAttribute="bottom" constant="40" id="LG2-Ze-jAc"/>
+                            <constraint firstItem="IqK-OX-mP1" firstAttribute="top" secondItem="s9e-sw-9db" secondAttribute="bottom" constant="40" id="Vhq-qZ-XXO"/>
+                            <constraint firstItem="iAX-Dx-4KG" firstAttribute="top" secondItem="hLX-wW-y8T" secondAttribute="top" constant="280" id="X50-l0-wHD"/>
+                            <constraint firstItem="s9e-sw-9db" firstAttribute="centerX" secondItem="hLX-wW-y8T" secondAttribute="centerX" id="Xq4-f0-iPS"/>
+                            <constraint firstItem="IqK-OX-mP1" firstAttribute="centerX" secondItem="hLX-wW-y8T" secondAttribute="centerX" id="nZj-TY-6nf"/>
+                            <constraint firstItem="IqK-OX-mP1" firstAttribute="width" secondItem="pf6-mg-WTZ" secondAttribute="width" id="pBL-38-J3m"/>
+                            <constraint firstItem="pf6-mg-WTZ" firstAttribute="top" secondItem="IqK-OX-mP1" secondAttribute="bottom" constant="40" id="phF-0P-hbt"/>
+                            <constraint firstItem="iAX-Dx-4KG" firstAttribute="width" secondItem="s9e-sw-9db" secondAttribute="width" id="ti1-os-K3w"/>
+                            <constraint firstItem="iAX-Dx-4KG" firstAttribute="height" secondItem="s9e-sw-9db" secondAttribute="height" id="u1K-Ki-meP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hLX-wW-y8T"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOME" id="WJ0-yj-0Gr">
+                        <barButtonItem key="backBarButtonItem" title=" " id="hRS-kU-oOM"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="codesGenerationButton" destination="iAX-Dx-4KG" id="j3n-Tf-O5p"/>
+                        <outlet property="codesGestionButton" destination="s9e-sw-9db" id="bkE-8w-jWy"/>
+                        <outlet property="depositsGestionButton" destination="pf6-mg-WTZ" id="SaY-w1-Ez3"/>
+                        <outlet property="itemsGestionButton" destination="IqK-OX-mP1" id="erD-m8-BuJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilQ-My-Xgv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="-170"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Uh-du-9hq">
+            <objects>
+                <navigationController id="NjF-4s-nz9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B5x-rd-glN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GEJ-oe-71C" kind="relationship" relationship="rootViewController" id="hpx-8l-Fn3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAP-wq-5cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-745" y="-170"/>
+        </scene>
+        <!--Add New Item Screen View Controller-->
+        <scene sceneID="jfC-Jm-RWD">
+            <objects>
+                <viewController storyboardIdentifier="AddNewItemScreenViewController" id="wIb-s9-8E3" customClass="AddNewItemScreenViewController" customModule="Bonida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gEG-pH-kR4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nume" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7D-Va-kgS">
+                                <rect key="frame" x="20" y="30" width="247" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-uO-VI0">
+                                <rect key="frame" x="20" y="80" width="335" height="503"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddSubItemTableViewCell" rowHeight="55" id="eaK-bK-Mdd" customClass="AddSubItemTableViewCell" customModule="Bonida" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eaK-bK-Mdd" id="yDr-HE-cfH">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nume" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJd-94-YYh">
+                                                    <rect key="frame" x="20" y="12.5" width="195" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gV-y2-ZsS">
+                                                    <rect key="frame" x="235" y="12" width="80" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="9FO-pF-6SJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="12"/>
+                                                    <state key="normal" title="Add SubItem">
+                                                        <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="addButtonTapped:" destination="eaK-bK-Mdd" eventType="touchUpInside" id="Xc6-JG-Nuj"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1gV-y2-ZsS" firstAttribute="leading" secondItem="zJd-94-YYh" secondAttribute="trailing" constant="20" id="5VU-om-cJN"/>
+                                                <constraint firstItem="1gV-y2-ZsS" firstAttribute="centerY" secondItem="zJd-94-YYh" secondAttribute="centerY" id="SxP-Zh-JWA"/>
+                                                <constraint firstAttribute="bottom" secondItem="zJd-94-YYh" secondAttribute="bottom" constant="12" id="Zmq-aV-tiL"/>
+                                                <constraint firstItem="zJd-94-YYh" firstAttribute="leading" secondItem="yDr-HE-cfH" secondAttribute="leading" constant="20" id="beS-Yt-ZRd"/>
+                                                <constraint firstAttribute="trailing" secondItem="1gV-y2-ZsS" secondAttribute="trailing" constant="20" id="o4Y-Ug-RIF"/>
+                                                <constraint firstItem="zJd-94-YYh" firstAttribute="top" secondItem="yDr-HE-cfH" secondAttribute="top" constant="12" id="yjx-nF-JOI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addButton" destination="1gV-y2-ZsS" id="qwT-qI-Y6f"/>
+                                            <outlet property="titleTextField" destination="zJd-94-YYh" id="xP3-D2-dN6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTableViewCell" rowHeight="55" id="XLF-0g-jcd" customClass="ItemTableViewCell" customModule="Bonida" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="83" width="335" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XLF-0g-jcd" id="XFE-8d-V9L">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blS-r9-Wd4">
+                                                    <rect key="frame" x="40" y="15" width="48.5" height="24.5"/>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="blS-r9-Wd4" firstAttribute="leading" secondItem="XFE-8d-V9L" secondAttribute="leading" constant="40" id="CyA-p3-Y47"/>
+                                                <constraint firstAttribute="bottom" secondItem="blS-r9-Wd4" secondAttribute="bottom" constant="15" id="a6a-i2-dSb"/>
+                                                <constraint firstItem="blS-r9-Wd4" firstAttribute="top" secondItem="XFE-8d-V9L" secondAttribute="top" constant="15" id="oah-qr-oO7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="blS-r9-Wd4" id="Fk6-Rd-CSx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhy-em-8WV">
+                                <rect key="frame" x="287" y="30" width="68" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yss-LW-ltJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                <state key="normal" title="Add Item">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addItemButtonTapped:" destination="wIb-s9-8E3" eventType="touchUpInside" id="ZR9-cC-67h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JHI-NF-YGb" firstAttribute="trailing" secondItem="bhy-em-8WV" secondAttribute="trailing" constant="20" id="2FL-bI-81t"/>
+                            <constraint firstItem="JHI-NF-YGb" firstAttribute="bottom" secondItem="VtD-uO-VI0" secondAttribute="bottom" constant="20" id="6x1-c2-Ozu"/>
+                            <constraint firstItem="bhy-em-8WV" firstAttribute="centerY" secondItem="k7D-Va-kgS" secondAttribute="centerY" id="8jh-4s-FVu"/>
+                            <constraint firstItem="JHI-NF-YGb" firstAttribute="trailing" secondItem="VtD-uO-VI0" secondAttribute="trailing" constant="20" id="Bwp-lT-ZEf"/>
+                            <constraint firstItem="k7D-Va-kgS" firstAttribute="top" secondItem="JHI-NF-YGb" secondAttribute="top" constant="30" id="OO5-GC-DfQ"/>
+                            <constraint firstItem="k7D-Va-kgS" firstAttribute="leading" secondItem="JHI-NF-YGb" secondAttribute="leading" constant="20" id="RKP-F0-v6H"/>
+                            <constraint firstItem="VtD-uO-VI0" firstAttribute="top" secondItem="k7D-Va-kgS" secondAttribute="bottom" constant="20" id="Srb-zI-Y40"/>
+                            <constraint firstItem="bhy-em-8WV" firstAttribute="leading" secondItem="k7D-Va-kgS" secondAttribute="trailing" constant="20" id="veQ-Kf-tAp"/>
+                            <constraint firstItem="VtD-uO-VI0" firstAttribute="leading" secondItem="JHI-NF-YGb" secondAttribute="leading" constant="20" id="yEa-IR-uGZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JHI-NF-YGb"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="addItemButton" destination="bhy-em-8WV" id="QAH-JL-Hwo"/>
+                        <outlet property="itemsTableView" destination="VtD-uO-VI0" id="uSr-J7-1Ng"/>
+                        <outlet property="titleTextField" destination="k7D-Va-kgS" id="iJY-QZ-6av"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jn7-25-IEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968.5" y="-1469.5"/>
+        </scene>
+        <!--GESTIONARE CODURI-->
+        <scene sceneID="Qnk-hy-sr7">
+            <objects>
+                <viewController storyboardIdentifier="CodesGestionViewController" id="obB-cY-ynk" customClass="CodesGestionViewController" customModule="Bonida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W5R-aI-QIM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fFA-vA-sRX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTableViewCell" rowHeight="55" id="WgZ-As-Jh6" customClass="ItemTableViewCell" customModule="Bonida" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WgZ-As-Jh6" id="JD7-Js-JMO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpS-Kg-5Qe">
+                                                    <rect key="frame" x="40" y="15" width="48.5" height="24.5"/>
+                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jpS-Kg-5Qe" firstAttribute="leading" secondItem="JD7-Js-JMO" secondAttribute="leading" constant="40" id="eHT-id-gI9"/>
+                                                <constraint firstItem="jpS-Kg-5Qe" firstAttribute="top" secondItem="JD7-Js-JMO" secondAttribute="top" constant="15" id="gSx-35-4Fe"/>
+                                                <constraint firstAttribute="bottom" secondItem="jpS-Kg-5Qe" secondAttribute="bottom" constant="15" id="suR-F7-uCT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="jpS-Kg-5Qe" id="DwK-Db-H1M"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n6h-iV-jeH" firstAttribute="bottom" secondItem="fFA-vA-sRX" secondAttribute="bottom" id="X4m-ag-9KR"/>
+                            <constraint firstItem="n6h-iV-jeH" firstAttribute="trailing" secondItem="fFA-vA-sRX" secondAttribute="trailing" id="alN-n8-iyA"/>
+                            <constraint firstItem="fFA-vA-sRX" firstAttribute="top" secondItem="n6h-iV-jeH" secondAttribute="top" id="cNk-wE-0cd"/>
+                            <constraint firstItem="fFA-vA-sRX" firstAttribute="leading" secondItem="n6h-iV-jeH" secondAttribute="leading" id="nft-uc-43k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n6h-iV-jeH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GESTIONARE CODURI" id="9Um-A4-leD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="06A-ZD-5YI">
+                            <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="obB-cY-ynk" id="YP8-DL-rnK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="itemsTableView" destination="fFA-vA-sRX" id="udE-dd-Db8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8r-bD-IO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968.79999999999995" y="-646.32683658170924"/>
+        </scene>
+        <!--GESTIONARE MARFA-->
+        <scene sceneID="HQX-HD-iLd">
+            <objects>
+                <viewController storyboardIdentifier="ItemsGestionViewController" id="e2h-YS-dPU" customClass="ItemsGestionViewController" customModule="Bonida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Lb-qc-Lcp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVw-Bi-XfW">
+                                <rect key="frame" x="164" y="237" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="b98-rI-ty7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GESTIONARE MARFA" id="ljD-MX-zLs"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rR2-x5-Ndc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="142"/>
+        </scene>
+        <!--GENERARE CODURI-->
+        <scene sceneID="1S5-EL-Mj8">
+            <objects>
+                <viewController storyboardIdentifier="CodesGenerationViewController" id="cYx-3F-RKd" customClass="CodesGenerationViewController" customModule="Bonida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rSY-vQ-kqB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnw-Om-MXn">
+                                <rect key="frame" x="164" y="237" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uEi-1Q-iIp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GENERARE CODURI" id="1Sx-Gz-Gip"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Zb-xe-pe5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="-646"/>
+        </scene>
+        <!--GESTIONARE DEPOZITE-->
+        <scene sceneID="OdX-wm-CdH">
+            <objects>
+                <viewController storyboardIdentifier="DepositsGestionViewController" id="sub-0a-M5o" customClass="DepositsGestionViewController" customModule="Bonida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ygf-Vj-e6e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-r0-yMR">
+                                <rect key="frame" x="164" y="237" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OXe-Ja-3zw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GESTIONARE DEPOZITE" id="oXt-72-jt9"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDG-mN-J7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="142"/>
+        </scene>
+    </scenes>
+</document>
